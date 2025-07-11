@@ -1,3 +1,4 @@
+
 body{
     background-color: #f5f8ff;
 }
@@ -56,6 +57,7 @@ main{
         justify-content: space-between;
         margin: 0 auto;
         padding-top: 90px;
+       
     }
     .section-four{
         width: 517px;
@@ -76,10 +78,10 @@ main{
     .div-three img{
         width: 400px;
         height: 328px;
-        border-radius: 30px;
-    }
+        border-radius: 30px;}
+       
 .section-five{
-  background-color: rgba(78, 71, 255, 0.1); /* light purple background */
+  background-color: rgba(78, 71, 255, 0.1); light purple background
   padding: 40px;
   text-align: center;
   border-radius: 16px;
@@ -182,7 +184,7 @@ main{
 .webflow{
     max: width 1140px;
     height: 696px;
-   border: 1px solid red;
+   /* border: 1px solid red; */
    margin: 0 auto;
 }
   
@@ -204,9 +206,172 @@ main{
  width: 195px;
  height: 48px;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
+body {
+  background-color: #f5f8ff;
+}
 
-        
-        
+.contact-section {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.left {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+}
+
+.left h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #111;
+}
+
+.right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form button {
+  padding: 12px;
+  background-color: #4b6fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  /* transition: background 0.3s; */
+}
+
+form button:hover {
+  background-color: #3756e5;
+}
+
+@media (max-width: 720px) 
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 36px;
+  }
+
+  .right {
+    padding-top: 0;
+  }
+ 
+     .footer {
+  width: 1440px;
+  height: 428px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.logo {
+  color: #4b6fff;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.footer {
+  background-color: #f4f6ff;     /* light background */
+  padding: 60px 20px;
+  text-align: center;            /* center everything horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center;           /* center horizontally */
+  justify-content: center;       /* center vertically if needed */
+}
+
+.footer .logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4E47FF;
+  margin-bottom: 20px;
+}
+
+.footer .description {
+  font-size: 16px;
+  color: #444;
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.footer .nav-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .nav-links a {
+  text-decoration: none;
+  color: #4E47FF;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer .nav-links a:hover {
+  color: #1f1f1f;
+}
